@@ -1,0 +1,11 @@
+# Python dependencies and environments
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Docker, system files, and logs
+*.log
+
+# IDE files (e.g., VS Code)
+.vscode/
