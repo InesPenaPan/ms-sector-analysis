@@ -16,11 +16,11 @@ Este endpoint recupera métricas en tiempo real para un **ETF Sectorial**:
 
 * **Volumen** `volume`: Muestra la actividad y el nivel de interés de los inversores en el sector. Un volumen alto sugiere que el sector está "en movimiento" o es objeto de mucha atención (compra/venta).
 
-### 2. Sugerencias de Palabras Clave (`/trends/suggestions/{ticker}`)
+### 2. Sugerencias de Palabras Clave (`/trends/{ticker}`)
 
 Este endpoint consulta Google Trends para encontrar palabras clave y temas relacionados con el nombre del sector.
 
-### 3. Interés de Búsqueda a lo Largo del Tiempo (`/trends/suggestions/{ticker}`)
+### 3. Interés de Búsqueda a lo Largo del Tiempo (`/time-series/{ticker}`)
 
 Este endpoint recupera datos históricos que muestran la popularidad relativa de un término de búsqueda en Google a lo largo de un rango de fechas.
 
