@@ -6,3 +6,4 @@ pytrends
 pandas
 numpy
 urllib3<2.0
+py-eureka-client

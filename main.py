@@ -1,4 +1,6 @@
 from fastapi import FastAPI, HTTPException, status
+from py_eureka_client import eureka_client
+
 from typing import List
 from models.model_market import MarketInfo, TICKER_TO_SECTOR_NAME
 from models.model_trends import TrendsAnalysisResult, InterestOverTimeResult
@@ -9,6 +11,14 @@ from trends_analysis import trends_analysis, time_series_analysis
 app = FastAPI(
     title="MS-MarketData Microservice",
 )
+
+@app.on_event("startup")
+async def startup_event():
+    await eureka_client.init_async(
+        eureka_server="http://eureka-server:8761/eureka",
+        app_name="ms-news",
+        instance_port=8002
+    )
 
 # ----------------------------------------------------------------------
 # Market Information Endpoint
