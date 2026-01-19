@@ -15,7 +15,7 @@ app = FastAPI(
 @app.on_event("startup")
 async def startup_event():
     await eureka_client.init_async(
-        eureka_server="http://eureka-server:8761/eureka",
+        eureka_server="http://eureka-server:8761",
         app_name="ms-news",
         instance_port=8002
     )
