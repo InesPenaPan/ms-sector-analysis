@@ -2,7 +2,8 @@
 
 **Componente del Trabajo de Fin de Máster (TFM)** > *Máster en Ingeniería de Software y Sistemas Informáticos (MSSI)*
 
-Este microservicio ofrece una API construida con FastAPI para obtener y procesar datos de tendencias de búsqueda de Google y métricas actuales de mercado para ETF sectoriales, utilizando `pytrends` y `yfinance` como fuentes de datos.
+Microservicio construido con **FastAPI** que que automatiza la monitorización del entorno macroeconómico y competitivo de sectores específicos. Automatiza la ingesta de datos financieros mediante Yahoo! Finance (`yfinance`) para analizar ETFs sectoriales y caputra las tendencias de búsqueda a tarvés de Google Trends (`pytrends`).
+
 
 ## 💻 Funcionalidades Principales
 
