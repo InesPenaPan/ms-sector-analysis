@@ -31,7 +31,7 @@ Recupera métricas bursátiles de un ETF representativo para diagnosticar el est
 
 `GET /trends/{ticker}`
 
-Este endpoint consulta Google Trends para encontrar palabras clave y temas relacionados con el nombre del sector.
+Utiliza la función de sugerencias de Google Trends para proponer palabras clave y temas relacionados con el sector.
 
 ### Análisis de Popularidad
 
