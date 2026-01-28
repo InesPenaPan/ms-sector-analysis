@@ -40,11 +40,10 @@ Utiliza la función de sugerencias de Google Trends para proponer palabras clave
 
 `GET /time-series/{keyword}`
 
+Proporciona una serie temporal que muestra la popularidad relativa de un término de búsqueda en Google. Permitie definir un horizonte temporal personalizado mediante rangos de fechas ajustables.
 
 
 
-
-Este endpoint recupera datos históricos que muestran la popularidad relativa de un término de búsqueda en Google a lo largo de un rango de fechas.
 
 ### ⚡ Ejecutar el servicio
 
