@@ -31,9 +31,13 @@ Recupera métricas bursátiles de un ETF representativo para diagnosticar el est
 
 `GET /trends/{ticker}`
 
-Utiliza la función de sugerencias de Google Trends para proponer palabras clave y temas relacionados con el sector.
+Utiliza la función de sugerencias de Google Trends para proponer palabras clave y temas relacionados con el sector. Devuleve una collección `suggestions` donde cada elemento contine:
+
+* `title`: Término o frase sugerida por Google Trends.
+* `type`: Categoría de la entidad.
 
 ### Análisis de Popularidad
+
 
 
 ### 3. Interés de Búsqueda a lo Largo del Tiempo (`/time-series/{ticker}`)
