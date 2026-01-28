@@ -1,5 +1,7 @@
 # 📊 Microservicio de Análisis Sectorial
 
+**Componente del Trabajo de Fin de Máster (TFM)** > *Máster en Ingeniería de Software y Sistemas Informáticos (MSSI)*
+
 Este microservicio ofrece una API construida con FastAPI para obtener y procesar datos de tendencias de búsqueda de Google y métricas actuales de mercado para ETF sectoriales, utilizando `pytrends` y `yfinance` como fuentes de datos.
 
 ## 💻 Funcionalidades Principales
