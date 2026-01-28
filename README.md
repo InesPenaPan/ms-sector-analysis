@@ -38,9 +38,11 @@ Utiliza la función de sugerencias de Google Trends para proponer palabras clave
 
 ### Análisis de Popularidad
 
+`GET /time-series/{keyword}`
 
 
-### 3. Interés de Búsqueda a lo Largo del Tiempo (`/time-series/{ticker}`)
+
+
 
 Este endpoint recupera datos históricos que muestran la popularidad relativa de un término de búsqueda en Google a lo largo de un rango de fechas.
 
