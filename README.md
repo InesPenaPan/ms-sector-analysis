@@ -23,19 +23,18 @@ El microservicio está desarrollado con las siguientes tecnologías y librerías
 
 Recupera métricas bursátiles de un ETF representativo para diagnosticar el estado actual, el tamaño y el nivel de actividad de un determinado sector.
 
+* `last_close_price`: Indica el valor de mercado del sector. Refleja el rendimiento colectivo de las principales empresas de esa industria.
+* `market_cap`: Mide el tamaño total de los activos bajo gestión del ETF. Ayuda a entender la escala y la magnitud de la inversión total en el sector.
+* `volume`: Muestra la actividad y el nivel de interés de los inversores.
 
+### Análisis de Tendencias
 
-
-
-* **Precio Acual** `last_close_price`: Indica el valor de mercado actual del sector. Refleja el rendimiento colectivo de las principales empresas dentro de esa industria.
-
-* **Capitalización de Mercado** `market_cap`: Mide el tamaño total de los activos bajo gestión del ETF. Ayuda a entender la escala y la magnitud de la inversión total en ese sector.
-
-* **Volumen** `volume`: Muestra la actividad y el nivel de interés de los inversores en el sector. Un volumen alto sugiere que el sector está "en movimiento" o es objeto de mucha atención (compra/venta).
-
-### 2. Sugerencias de Palabras Clave (`/trends/{ticker}`)
+`GET /trends/{ticker}`
 
 Este endpoint consulta Google Trends para encontrar palabras clave y temas relacionados con el nombre del sector.
+
+### Análisis de Popularidad
+
 
 ### 3. Interés de Búsqueda a lo Largo del Tiempo (`/time-series/{ticker}`)
 
