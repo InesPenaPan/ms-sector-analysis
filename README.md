@@ -40,39 +40,27 @@ Utiliza la función de sugerencias de Google Trends para proponer palabras clave
 
 `GET /time-series/{keyword}`
 
-Proporciona una serie temporal que muestra la popularidad relativa de un término de búsqueda en Google. Permitie definir un horizonte temporal personalizado mediante rangos de fechas ajustables.
+Proporciona una serie temporal que muestra la popularidad relativa de un término de búsqueda en Google. Permitie definir un horizonte temporal personalizado mediante rangos de fechas ajustables. Devuleve una colección de puntos de datos que conforman la serie temporal, donde cada regsitro contiene:
 
+* `date`: Fecha del registro.
+* `interest_level`: Índice de popularidad relativa (escala de 0 a 100).
 
+### ⚡ Ejecución
 
-
-### ⚡ Ejecutar el servicio
-
-### Pasos
-
-1. **Situarse en el Directorio**: Abre tu terminal y navega hasta el directorio raíz del proyecto.
-
-2. **Construir e Iniciar**: Ejecuta el siguiente comando para construir la imagen e iniciar el contenedor:
+Navega hasta el directorio raíz del proyecto y ejecuta el siguiente comando en tu terminal:
 
 ```bash
 docker compose up --build -d
 ```
-
-3. **Acceder a la API**: El microservicio estará accesible en el puerto `8081` (definido en el docker-compose.yml). Utiliza tu navegador o una herramienta como cURL o Postman para realizar las siguientes peticiones:
+Una vez levantado el contenedor, la API estará disponible en el puerto `8080`. Puedes verificar el funcionamiento realizando peticiones a través de tu navegador, cURL o Postman:
 
 | Endpoint | URL Ejemplo |
 | :--- | :--- |
-| Datos de Mercado | `http://localhost:8081/market/XLK` |
-| Sugerencias | `http://localhost:8081/trends/XLE` |
-| Interés | `http://localhost:8081/time-series/Cloud%20Computing?start_date=2024-01-01&end_date=2024-12-31` |
+| Análisis de ETFs | `http://localhost:8081/market/XLK` |
+| Análisis de Tendencias | `http://localhost:8081/trends/XLE` |
+| Análisis de Popularidad | `http://localhost:8081/time-series/Cloud%20Computing?start_date=2024-01-01&end_date=2024-12-31` |
 
-### Ejemplos de Tickers
+**Nota:** Puedes buscar los símbolos de los ETFs (ej: XLK, XLF, XLE) en [Yahoo! Finance](https://finance.yahoo.com/).
 
-Utiliza los siguientes símbolos bursátiles para probar tu API:
 
-| Ticker | Sector |
-| :--- | :--- |
-| **XLK** | Technology |
-| **XLF** | Finance |
-| **XLE** | Energy |
-| **XLV** | Healthcare |
 
