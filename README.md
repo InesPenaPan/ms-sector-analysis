@@ -62,5 +62,21 @@ Una vez levantado el contenedor, la API estará disponible en el puerto `8080`. 
 
 **Nota:** Puedes buscar los símbolos de los ETFs (ej: XLK, XLF, XLE) en [Yahoo! Finance](https://finance.yahoo.com/).
 
+### 📂 Estructura del Proyecto
+
+```bash
+.
+├── models/
+│   ├── model_market.py        # Esquemas Pydantic para métricas de ETFs
+│   └── model_trends.py        # Esquemas Pydantic para sugerencias y series temporales
+├── docker-compose.yml         # Orquestación de servicios
+├── Dockerfile                 # Configuración de la imagen Docker
+├── main.py                    # Punto de entrada de la API (FastAPI)
+├── README.md                  # Documentación del proyecto
+├── requirements.txt           # Dependencias del proyecto
+├── retrieve_market_info.py    # Lógica de extracción de datos financieros (Yahoo Finance)
+└── trends_analysis.py         # Lógica de análisis y conexión con Google Trends
+```
+
 
 
