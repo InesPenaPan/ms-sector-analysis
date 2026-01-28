@@ -4,6 +4,11 @@
 
 Microservicio construido con **FastAPI** que que automatiza la monitorización del entorno macroeconómico y competitivo de sectores específicos. Automatiza la ingesta de datos financieros mediante Yahoo! Finance (`yfinance`) para analizar ETFs sectoriales y caputra las tendencias de búsqueda a tarvés de Google Trends (`pytrends`).
 
+## 🛠️ Stack 
+El microservicio está desarrollado con las siguientes tecnologías y librerías clave:
+
+* `FastAPI`: Framework principal utilizado para construir la API.
+
 
 ## 💻 Funcionalidades Principales
 
