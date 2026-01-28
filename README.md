@@ -15,14 +15,15 @@ El microservicio está desarrollado con las siguientes tecnologías y librerías
 * `NumPy`: Soporte para el procesamiento eficiente de grandes estructuras de datos y cálculos numéricos.
 * `py-eureka-client`: Cliente para la integración con **Netflix Eureka**.
 
+## 🌐 Endpoints
 
-## 💻 Funcionalidades Principales
+### Análisis de ETFs
 
-El microservicio expone dos endpoints principales:
+`GET /market/{ticker}`
 
-### 1. Datos de Mercado Sectorial (`/market/{ticker}`)
 
-Este endpoint recupera métricas en tiempo real para un **ETF Sectorial**: 
+
+
 
 * **Precio Acual** `last_close_price`: Indica el valor de mercado actual del sector. Refleja el rendimiento colectivo de las principales empresas dentro de esa industria.
 
