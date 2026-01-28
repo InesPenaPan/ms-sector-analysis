@@ -21,6 +21,8 @@ El microservicio está desarrollado con las siguientes tecnologías y librerías
 
 `GET /market/{ticker}`
 
+Recupera métricas bursátiles de un ETF representativo para diagnosticar el estado actual, el tamaño y el nivel de actividad de un determinado sector.
+
 
 
 
