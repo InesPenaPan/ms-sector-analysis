@@ -8,6 +8,12 @@ Microservicio construido con **FastAPI** que que automatiza la monitorización d
 El microservicio está desarrollado con las siguientes tecnologías y librerías clave:
 
 * `FastAPI`: Framework principal utilizado para construir la API.
+* `uvicorn`: Servidor ASGI de alta velocidad encargado de ejecutar la aplicación.
+* `pydantic`: Utilizado para la validación de datos y la gestión de esquemas mediante modelos de Python.
+* `yfinance`: Librería encargada de la extracción de datos financieros y de mercado desde la API de Yahoo! Finance.
+* `pytrends`: Interfaz para la descarga de informes de tendencias y popularidad de palabras clave en Google.
+* `NumPy`: Soporte para el procesamiento eficiente de grandes estructuras de datos y cálculos numéricos.
+* `py-eureka-client`: Cliente para la integración con **Netflix Eureka**.
 
 
 ## 💻 Funcionalidades Principales
